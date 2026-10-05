@@ -28,15 +28,15 @@ from typing import Any, Dict, Tuple
 from opentelemetry.sdk.metrics import Counter
 from opentelemetry.sdk.metrics.export import (
     AggregationTemporality,
+    MetricExporter,
+    MetricExportResult,
+    Sum,
+)
+from opentelemetry.sdk.metrics.export import (
     Gauge as OTelGauge,
 )
 from opentelemetry.sdk.metrics.export import (
     Histogram as OTelHistogram,
-)
-from opentelemetry.sdk.metrics.export import (
-    MetricExporter,
-    MetricExportResult,
-    Sum,
 )
 from starlette.responses import Response
 
